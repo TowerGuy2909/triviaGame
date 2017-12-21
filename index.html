@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<link rel="stylesheet" type="text/css"  href="assets/css/style.css">
+
+<!-- start screen -->
+
+<!-- 1. the header, like Totally Trival Trivia, is going to be a h1 with a very large font. This element will carry over to every screen.-->
+
+<!-- 2. The opening screen is to have a large start button to initiate the main game screen. -->
+
+<!-- 3. place all start screen contents in a large center box. -->
+
+<!-- 4. Once you hit the button you should hide the start button move and show the mainScreen. -->
+
+
+<div class= 'mainContent'>
+
+	<h1 class = "header" >Riddle Me This</h1>
+
+	<div onclick='toMain()' class='button' id="start">
+		<button class='startButton'>START!</button>
+	</div>
+	<p class='riddle1' id="riddle" > 	
+		What has roots as nobody sees,
+		Is taller than trees,
+		Up, up it goes,
+		And yet never grows? 
+
+		<br><br>
+
+	<input type="checkbox" onclick = 'correctFunction()'> Mountains
+	<input type="checkbox" onclick = 'falseFunction()'> Weeds
+	<input type="checkbox" onclick = 'falseFunction()'> Castles
+	<input type="checkbox" onclick = 'falseFunction()'> Waterfalls
+	</p>
+	
+
+</div>
+
+
+
+
+
+<!-- main screen -->
+
+<!-- 3. The main game screen will have a time counter: Time remaining (seconds) -->
+
+<!-- 4. A box  where a question goes. -->
+
+<!-- 5. A row of answers with a check box for each one -->
+
+
+
+
+
+
+
+
+
+<!-- end screen -->
+
+<!-- 6. Once counter times out you will see: All Done! when the screen changes-->
+
+<!-- 7. A correct answer number -->
+
+<!-- 8. a incorrect answer number -->
+
+<!-- 9. an unanswered number -->
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
