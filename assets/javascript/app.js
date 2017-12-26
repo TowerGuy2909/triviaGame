@@ -2,7 +2,7 @@
 
 var y = document.getElementById("riddle").style.display = "none";
 var z = document.getElementById("countdown").style.display = "none";
-var a = document.getElementById("endScreen").style.display = "none";
+var end = document.getElementById("endScreen").style.display = "none";
 
 function toMain() {
 	var x = document.getElementById("start");
@@ -18,9 +18,11 @@ function toMain() {
 
 		if (seconds == 1) {
 
-			var y = document.getElementById("riddle").style.display = "none";
+			
 			temp = document.getElementById('countdown');
 			temp.innerHTML = "All Done, Precious!";
+			document.getElementById("endScreen").style.display = "";
+			y = document.getElementById("riddle").style.display = "none";
 			return;
 		}
 
@@ -38,12 +40,19 @@ function toMain() {
 var isCorrect = 0;
 var isFalse = 0;
 
+// if (temp == 1){
+	
+// }
+
+
 function correctFunction(){
 	isCorrect++;
 }
 function falseFunction(){
 	isFalse++;
 }
+
+
 
 var unansweredQuestions = 0;
 
